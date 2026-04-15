@@ -24,7 +24,7 @@ const ReservationSection = () => {
           <path d="M10 44c0-20 44-20 44 0" />
         </svg>
 
-        <div className="max-w-6xl mx-auto px-6 py-16 relative z-10">
+        <div className="max-w-6xl mx-auto px-6 py-8 relative z-10">
           <div className="bg-card rounded-[2rem] overflow-hidden grid md:grid-cols-2 min-h-[480px]">
             {/* Form side */}
             <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-center">

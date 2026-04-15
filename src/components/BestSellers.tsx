@@ -1,30 +1,26 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import heroBurger from "@/assets/hero-burger.png";
-import chickenBurger from "@/assets/chicken-burger.png";
-import smokyBurger from "@/assets/smoky-burger.png";
-
 const sellers = [
   {
-    name: "MIDNIGHT BITE",
-    desc: "Smoky mustard, onion rings, and smoked bacon",
-    price: "$15.00",
-    img: heroBurger,
+    name: "RICE BOWLS",
+    desc: "Savory chicken, fresh veggies, and signature sauce over steamed rice",
+    price: "$13.00",
+    img: "/Rice Bowls.avif",
     cardColor: "bg-primary",
   },
   {
-    name: "CHEESY BOOM",
-    desc: "Cheese sauce, beef patty, and garlic butter bun",
-    price: "$17.00",
-    img: chickenBurger,
+    name: "CHICKEN BURGER",
+    desc: "Crispy fried chicken, pickles, and spicy mayo on a toasted bun",
+    price: "$15.00",
+    img: "/Chicken Burger.avif",
     cardColor: "bg-destructive",
   },
   {
-    name: "SMOKY BEAST",
-    desc: "BBQ sauce, beef bacon, and caramelized onions",
-    price: "$14.00",
-    img: smokyBurger,
-    cardColor: "bg-[hsl(170,40%,30%)]",
+    name: "CRAWFISH SANDWICH",
+    desc: "Cajun-seasoned crawfish, remoulade sauce, and crunchy slaw",
+    price: "$17.00",
+    img: "/Crawfish Sandwich.avif",
+    cardColor: "bg-[hsl(25,60%,35%)]",
   },
 ];
 
@@ -73,14 +69,14 @@ const BestSellers = () => {
               className="rounded-2xl overflow-hidden flex flex-col"
             >
               {/* Colored top with image */}
-              <div className={`${item.cardColor} relative pt-6 px-6 flex items-end justify-center h-56 md:h-64`}>
+              <div className={`${item.cardColor} relative h-56 md:h-64 overflow-hidden`}>
                 <img
                   src={item.img}
                   alt={item.name}
                   loading="lazy"
                   width={600}
                   height={600}
-                  className="w-44 md:w-52 object-contain drop-shadow-xl"
+                  className="w-full h-full object-cover"
                 />
               </div>
 

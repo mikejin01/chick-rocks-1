@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ctaBurgers from "@/assets/cta-burgers.jpg";
+
 
 const CtaSection = () => {
   return (
@@ -50,8 +50,8 @@ const CtaSection = () => {
           {/* Image side */}
           <div className="relative">
             <img
-              src={ctaBurgers}
-              alt="Fresh burgers being served"
+              src="/store-front.avif"
+              alt="Chick Rocks store front"
               loading="lazy"
               width={1024}
               height={800}

@@ -76,11 +76,11 @@ const Footer = () => (
           <h4 className="font-display text-xl text-card-foreground mb-4">LOCATION</h4>
           <div className="flex gap-4 items-start">
             <div className="rounded-xl overflow-hidden w-24 h-20 flex-shrink-0">
-              <img src={restaurantInterior} alt="BunBite restaurant" loading="lazy" width={800} height={600} className="w-full h-full object-cover" />
+              <img src={restaurantInterior} alt="Chick Rocks restaurant" loading="lazy" width={800} height={600} className="w-full h-full object-cover" />
             </div>
             <div>
               <p className="text-card-foreground/70 text-sm leading-relaxed">
-                123 BunBite Street, Downtown Food District, New York
+                123 Chick Rocks Street, Downtown Food District, New York
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Footer = () => (
         <div className="text-center">
           <h4 className="font-display text-xl text-card-foreground mb-4">ABOUT US</h4>
           <p className="text-card-foreground/70 text-sm leading-relaxed mb-6">
-            BunBite serves fresh, juicy burgers with fun flavors and premium ingredients. Every bite is crafted to bring you happiness and unforgettable taste.
+            Chick Rocks serves fresh, juicy burgers with fun flavors and premium ingredients. Every bite is crafted to bring you happiness and unforgettable taste.
           </p>
           <div className="flex justify-center gap-3">
             {[
@@ -113,7 +113,7 @@ const Footer = () => (
         <div>
           <h4 className="font-display text-xl text-card-foreground mb-4">CONTACT US</h4>
           <p className="text-card-foreground/70 text-sm mb-4 leading-relaxed">
-            Join our email list for promotions, giveaways, and other communications from BunBite.
+            Join our email list for promotions, giveaways, and other communications from Chick Rocks.
           </p>
           <div className="flex gap-0 mb-6">
             <input type="email" placeholder="Enter your email" className="flex-1 bg-card border border-card-foreground/20 text-card-foreground placeholder:text-card-foreground/40 rounded-l-lg px-4 py-2.5 text-xs focus:outline-none" />
@@ -123,14 +123,14 @@ const Footer = () => (
           </div>
           <div className="flex flex-col sm:flex-row gap-3 text-card-foreground/70 text-sm">
             <span className="flex items-center gap-1.5">📞 +1(555) 123-4567</span>
-            <span className="flex items-center gap-1.5">✉ hello@bunbite.com</span>
+            <span className="flex items-center gap-1.5">✉ hello@chickrocks.com</span>
           </div>
         </div>
       </div>
 
       {/* Bottom copyright */}
       <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-card-foreground/10 text-center text-xs text-card-foreground/50">
-        All Rights Reserved ©Bunbite 2026
+        All Rights Reserved ©Chick Rocks 2026
       </div>
     </div>
   </footer>

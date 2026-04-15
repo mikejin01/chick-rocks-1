@@ -17,7 +17,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="font-display text-4xl md:text-5xl lg:text-6xl text-card-foreground mb-4"
         >
-          WHAT MAKES<br />BUNBITE DIFFERENT?
+          WHAT MAKES<br />CHICK ROCKS DIFFERENT?
         </motion.h2>
         <p className="text-card-foreground/70 max-w-lg mx-auto mb-12 text-base">
           Where fresh ingredients meet fun flavors, and your perfect burger comes to life, one tasty bite.

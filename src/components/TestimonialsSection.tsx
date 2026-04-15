@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     name: "Daniel K.",
-    text: "BUNBITE IS MY GO TO SPOT. SO MANY FUN COMBOS AND NEVER DISAPPOINTING!",
+    text: "CHICK ROCKS IS MY GO TO SPOT. SO MANY FUN COMBOS AND NEVER DISAPPOINTING!",
     stars: 5,
   },
   {

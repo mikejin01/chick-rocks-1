@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import friendsEating from "@/assets/friends-eating.jpg";
+
 
 const ReservationSection = () => {
   return (
@@ -74,7 +74,7 @@ const ReservationSection = () => {
 
             {/* Image side */}
             <div className="relative hidden md:block">
-              <img src={friendsEating} alt="Friends enjoying burgers together" loading="lazy" width={800} height={900} className="w-full h-full object-cover" />
+              <img src="/store-front.avif" alt="Chick Rocks store front" loading="lazy" width={800} height={900} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

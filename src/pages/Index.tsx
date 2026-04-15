@@ -1,9 +1,9 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import MarqueeStrip from "@/components/MarqueeStrip";
+import AboutSection from "@/components/AboutSection";
 import MenuCategories from "@/components/MenuCategories";
 import BestSellers from "@/components/BestSellers";
-import AboutSection from "@/components/AboutSection";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 
@@ -12,10 +12,12 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <HeroSection />
-      <MarqueeStrip />
+      <div className="bg-card">
+        <MarqueeStrip />
+        <AboutSection />
+      </div>
       <MenuCategories />
       <BestSellers />
-      <AboutSection />
       <CtaSection />
       <Footer />
     </div>

@@ -4,7 +4,8 @@ import MarqueeStrip from "@/components/MarqueeStrip";
 import MenuCategories from "@/components/MenuCategories";
 import BestSellers from "@/components/BestSellers";
 import AboutSection from "@/components/AboutSection";
-import CtaSection from "@/components/CtaSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import ReservationSection from "@/components/ReservationSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,7 +17,8 @@ const Index = () => {
       <MenuCategories />
       <BestSellers />
       <AboutSection />
-      <CtaSection />
+      <TestimonialsSection />
+      <ReservationSection />
       <Footer />
     </div>
   );

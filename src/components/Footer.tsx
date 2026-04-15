@@ -4,7 +4,7 @@ import restaurantInterior from "@/assets/restaurant-interior.jpg";
 const Footer = () => (
   <footer>
     {/* Opening Hours - dark green bg with cloud bottom */}
-    <section className="relative bg-background pt-16 pb-32 overflow-hidden">
+    <section className="relative bg-background pt-8 pb-32 overflow-hidden">
       {/* SVG background decorations */}
       <svg className="absolute top-6 left-[5%] w-14 h-14 text-foreground/[0.06]" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="32" cy="30" r="18" />

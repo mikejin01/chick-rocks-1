@@ -79,15 +79,6 @@ const ReservationSection = () => {
           </div>
         </div>
 
-        {/* Cloud wave bottom edge */}
-        <div className="absolute bottom-0 left-0 right-0 translate-y-[1px]">
-          <svg viewBox="0 0 1440 120" className="w-full" preserveAspectRatio="none">
-            <path
-              fill="hsl(45, 50%, 88%)"
-              d="M0,120 L0,60 C80,10 160,90 240,50 C320,10 400,80 480,50 C560,20 640,90 720,60 C800,30 880,90 960,50 C1040,10 1120,80 1200,50 C1280,20 1360,90 1440,60 L1440,120 Z"
-            />
-          </svg>
-        </div>
       </div>
     </section>
   );

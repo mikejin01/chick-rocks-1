@@ -3,7 +3,7 @@ import heroHandsClean from "@/assets/hero-hands-clean.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100vh] flex flex-col items-center justify-start overflow-hidden pt-24 md:pt-28 bg-background">
+    <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden pt-20 bg-background">
       {/* Subtle SVG background illustrations */}
       <svg className="absolute top-20 left-8 w-20 h-20 text-foreground/10" viewBox="0 0 80 80" fill="none">
         <circle cx="40" cy="30" r="18" stroke="currentColor" strokeWidth="2" />
@@ -33,12 +33,12 @@ const HeroSection = () => {
         <path d="M15 2 L18 12 L28 12 L20 18 L23 28 L15 22 L7 28 L10 18 L2 12 L12 12 Z" stroke="currentColor" strokeWidth="1.5" />
       </svg>
 
-      {/* Cloud shape background at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-[40%] pointer-events-none">
-        <svg viewBox="0 0 1440 400" className="absolute bottom-0 w-full h-full" preserveAspectRatio="none">
+      {/* Symmetrical cream cloud - bottom half */}
+      <div className="absolute bottom-0 left-0 right-0 pointer-events-none" style={{ height: '45%' }}>
+        <svg viewBox="0 0 1440 500" className="absolute bottom-0 w-full h-full" preserveAspectRatio="none">
           <path
             fill="hsl(45, 50%, 88%)"
-            d="M0,200 C120,80 280,300 440,180 C600,60 680,280 840,160 C1000,40 1120,280 1280,160 C1360,100 1400,180 1440,160 L1440,400 L0,400 Z"
+            d="M0,180 C160,60 320,280 500,160 C680,40 780,260 960,140 C1140,20 1280,240 1440,140 L1440,500 L0,500 Z"
           />
         </svg>
       </div>
@@ -58,12 +58,12 @@ const HeroSection = () => {
         DELICIOUS<br />BURGERS
       </motion.h1>
 
-      {/* Hands holding burger - overlapping the title */}
+      {/* Hands holding burger */}
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="relative z-10 -mt-20 sm:-mt-24 md:-mt-32 lg:-mt-44"
+        className="relative z-10 -mt-16 sm:-mt-20 md:-mt-28 lg:-mt-40"
       >
         <img
           src={heroHandsClean}

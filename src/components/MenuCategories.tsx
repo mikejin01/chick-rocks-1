@@ -18,7 +18,7 @@ const categories = [
 const MenuCategories = () => {
   return (
     <section className="bg-card py-16 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

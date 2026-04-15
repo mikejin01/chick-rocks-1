@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import restaurantInterior from "@/assets/restaurant-interior.jpg";
 
 const Footer = () => (
   <footer>
@@ -73,14 +72,18 @@ const Footer = () => (
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Location */}
         <div>
-          <h4 className="font-display text-xl text-card-foreground mb-4">LOCATION</h4>
-          <div className="flex gap-4 items-start">
-            <div className="rounded-xl overflow-hidden w-24 h-20 flex-shrink-0">
-              <img src={restaurantInterior} alt="Chick Rocks restaurant" loading="lazy" width={800} height={600} className="w-full h-full object-cover" />
+          <h4 className="font-display text-xl text-card-foreground mb-4">LOCATIONS</h4>
+          <div className="space-y-4">
+            <div>
+              <p className="text-card-foreground text-sm font-semibold mb-1">Flushing</p>
+              <p className="text-card-foreground/70 text-sm leading-relaxed">
+                136-20 Roosevelt Ave #25, Flushing, NY 11354
+              </p>
             </div>
             <div>
+              <p className="text-card-foreground text-sm font-semibold mb-1">Astoria</p>
               <p className="text-card-foreground/70 text-sm leading-relaxed">
-                123 Chick Rocks Street, Downtown Food District, New York
+                30-02 Steinway St, Astoria, NY 11103
               </p>
             </div>
           </div>
@@ -130,6 +133,10 @@ const Footer = () => (
 
       {/* Bottom copyright */}
       <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-card-foreground/10 text-center text-xs text-card-foreground/50">
+        <div className="flex items-center justify-center gap-2 mb-2">
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Chick Rocks logo" className="w-8 h-8" />
+          <span className="font-display text-sm text-card-foreground/70">CHICK ROCKS</span>
+        </div>
         All Rights Reserved ©Chick Rocks 2026
       </div>
     </div>

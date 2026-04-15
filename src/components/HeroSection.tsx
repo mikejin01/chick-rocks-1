@@ -33,6 +33,15 @@ const HeroSection = () => {
         <path d="M15 2 L18 12 L28 12 L20 18 L23 28 L15 22 L7 28 L10 18 L2 12 L12 12 Z" stroke="currentColor" strokeWidth="1.5" />
       </svg>
 
+      {/* Logo background watermark */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+        <img
+          src={`${import.meta.env.BASE_URL}logo.png`}
+          alt=""
+          className="w-[60vw] max-w-[700px] opacity-[0.07]"
+        />
+      </div>
+
       {/* Cloud shape background at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-[40%] pointer-events-none">
         <svg viewBox="0 0 1440 400" className="absolute bottom-0 w-full h-full" preserveAspectRatio="none">

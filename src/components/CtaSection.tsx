@@ -50,7 +50,7 @@ const CtaSection = () => {
           {/* Image side */}
           <div className="relative">
             <img
-              src="/store-front.avif"
+              src={`${import.meta.env.BASE_URL}store-front.avif`}
               alt="Chick Rocks store front"
               loading="lazy"
               width={1024}

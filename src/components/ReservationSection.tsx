@@ -74,7 +74,7 @@ const ReservationSection = () => {
 
             {/* Image side */}
             <div className="relative hidden md:block">
-              <img src="/store-front.avif" alt="Chick Rocks store front" loading="lazy" width={800} height={900} className="w-full h-full object-cover" />
+              <img src={`${import.meta.env.BASE_URL}store-front.avif`} alt="Chick Rocks store front" loading="lazy" width={800} height={900} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

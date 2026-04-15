@@ -3,7 +3,7 @@ import heroHandsClean from "@/assets/hero-hands-clean.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100vh] flex flex-col items-center justify-start overflow-hidden pt-24 md:pt-28 bg-background">
+    <section className="relative h-[100vh] flex flex-col items-center justify-start overflow-hidden pt-24 md:pt-28 bg-background">
       {/* Subtle SVG background illustrations */}
       <svg className="absolute top-20 left-8 w-20 h-20 text-foreground/10" viewBox="0 0 80 80" fill="none">
         <circle cx="40" cy="30" r="18" stroke="currentColor" strokeWidth="2" />
@@ -95,6 +95,19 @@ const HeroSection = () => {
           </div>
         </div>
       </motion.div>
+
+      {/* Marquee strip at bottom of hero */}
+      <div className="absolute bottom-0 left-0 right-0 z-30 bg-primary py-4 md:py-5 overflow-hidden">
+        <div className="flex animate-marquee whitespace-nowrap">
+          {[...Array(2)].flatMap((_, j) =>
+            ["HAPPY BITES", "FUN FLAVORS", "SO TASTY", "FAST & FRESH", "SNACK TIME", "JUICY GOODNESS"].map((item, i) => (
+              <span key={`${j}-${i}`} className="font-display text-xl md:text-2xl lg:text-3xl text-primary-foreground mx-8 flex items-center gap-4">
+                <span className="text-primary-foreground">✻</span> {item}
+              </span>
+            ))
+          )}
+        </div>
+      </div>
     </section>
   );
 };
